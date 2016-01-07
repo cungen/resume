@@ -1,3 +1,6 @@
+@import mixins
+@import font-faces
+
 body
     margin: 0
 
@@ -7,9 +10,7 @@ body
         width: 100px
         height: 100px
         overflow: hidden
-        -webkit-border-radius:
-        -moz-border-radius:
-        border-radius:
+        +borderRadius(100%)
         img
             width: 100px
             height: auto

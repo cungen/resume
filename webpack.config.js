@@ -5,19 +5,20 @@ module.exports = {
     devtool: 'eval',
     entry: {
         app: [
-            'webpack-dev-server/client?http://localhost:3000',
+            'webpack-dev-server/client?http://localhost:4000',
             'webpack/hot/only-dev-server',
             './src/index'
         ],
-        vector: ['react']
+        vendors: ['react']
     },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/static/'
+        filename: 'app.js',
+        publicPath: '/dist/'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js')
     ],
     module: {
         loaders: [
