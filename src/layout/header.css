@@ -1,0 +1,51 @@
+:local(.root) {
+    width: 702px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 16px solid rgb(17, 181, 173);
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+:local .avatar {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-left: 40px;
+    margin-right: 20px;
+    overflow: hidden;
+    -webkit-border-radius: 00%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+:local .avatar img {
+    position: relative;
+    width: 80px;
+    height: auto;
+    top: -10px;
+}
+
+:local .name {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #333333;
+    line-height: 42px;
+}
+
+:local .position {
+    font-style: italic;
+}
+
+:local .right {
+    display: inline-block;
+    float: right;
+    width: 300px;
+}
+
+:local .left {
+    float: left;
+    width: 300px;
+}
