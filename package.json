@@ -4,7 +4,7 @@
   "description": "Resume for Cungen Jiang.",
   "scripts": {
     "start": "node server.js",
-    "build": "node server.js",
+    "build": "webpack -p --config webpack.production.config.js",
     "lint": "eslint src"
   },
   "repository": {
