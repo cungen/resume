@@ -17,6 +17,8 @@ export default class App extends Component {
                     <Profile />
                     <Education />
                     <Experiences />
+                    <div className='page-next'>
+                    </div>
                     <Skills />
                 </Content>
             </div>
