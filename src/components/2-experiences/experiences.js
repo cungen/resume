@@ -19,10 +19,26 @@ export default class Experiences extends Component {
                     <div className='ctx-right'>
                         <div className={styles.experiences}>
                             <div className={styles.company}>医渡云技术有限公司</div>
+                            <div className={styles.project}>专病数据库</div>
+                            <div className={styles.content}>
+                                类似科研平台, 对某一病种的数据做更针对的结构化的产品, 由本人初始化框架, 采用Vue开发, 加入了Vux, 使用了ElementUI并定制化了样式
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{clear: 'both', overflow: 'hidden'}}>
+                    <div className='ctx-left'>
+                        <div className={styles.timeline} style={{height: 140}}>
+                            2016-08
+                        </div>
+                    </div>
+                    <div className='ctx-right'>
+                        <div className={styles.experiences}>
+                            <div className={styles.company}>医渡云技术有限公司</div>
                             <div className={styles.project}>科研平台</div>
-                            <div className={styles.content}>医生科研项目的管理, 可以让医生通过设置一些逻辑条件来筛选出想要的病人数据,
-                                同时也可以选择要观测的指标和进行在线分析导出操作, 同样采用angular开发, d3和highchart做数据可视化,
-                                使用我们自己的组件库来进行页面组织
+                            <div className={styles.content}>帮助医生进行科研探索和科研项目管理的一个产品, 包括了一个内网单中心版本和公网多中心版本及垮平台的移动端,
+                                同样采用angular开发, d3和highchart做数据可视化, 使用我们自己的组件库来进行页面组织, 后由本人重构过一版,
+                                加入了webpack和es6的方式来模块化angular, 移动端也由本人维护一段时间和重构过一次使用Ionic开发, 加入了代码热补丁
                             </div>
                         </div>
                     </div>

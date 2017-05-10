@@ -40,14 +40,14 @@ export default class Skills extends Component {
             type: '语言',
             list: [
                 [
-                    { name: 'html', percent: 0.90, icon: 'html5' },
-                    { name: 'js', percent: 0.90, icon: 'js' },
-                    { name: 'css', percent: 0.90, icon: 'css3' },
-                    { name: 'coffeescript', percent: 0.80, icon: 'coffeescript' },
-                    { name: 'sass', percent: 0.95, icon: 'sass' }
+                    { name: 'html', percent: 0.80, icon: 'html5' },
+                    { name: 'js', percent: 0.80, icon: 'js' },
+                    { name: 'css', percent: 0.80, icon: 'css3' },
+                    { name: 'coffeescript', percent: 0.70, icon: 'coffeescript' },
+                    { name: 'sass', percent: 0.90, icon: 'sass' }
                 ],
                 [
-                    { name: 'python', percent: 0.75, icon: 'python' },
+                    { name: 'python', percent: 0.70, icon: 'python' },
                     { name: 'php', percent: 0.65, icon: 'php' }
                 ]
             ]
@@ -55,7 +55,8 @@ export default class Skills extends Component {
             type: '框架',
             list: [
                 [
-                    { name: 'angular', percent: 0.90, icon: 'angular' },
+                    { name: 'vue', percent: 0.80, src: 'https://vuejs.org/images/logo.png' },
+                    { name: 'angular', percent: 0.85, icon: 'angular' },
                     { name: 'react', percent: 0.80, icon: 'react' }
                 ]
             ]
@@ -63,8 +64,9 @@ export default class Skills extends Component {
             type: '工具',
             list: [
                 [
-                    { name: 'gulp', percent: 0.80, icon: 'gulp' },
-                    { name: 'grunt', percent: 0.75, icon: 'grunt' }
+                    { name: 'webpack', percent: 0.85, src: 'https://webpack.js.org/6bc5d8cf78d442a984e70195db059b69.svg' },
+                    { name: 'gulp', percent: 0.70, icon: 'gulp' },
+                    { name: 'grunt', percent: 0.65, icon: 'grunt' }
                 ]
             ]
         }];
@@ -86,7 +88,9 @@ export default class Skills extends Component {
                                                     return (
                                                         <dd className={styles['skill-item']} title={item.percent * 100 + '%'}>
                                                             <div className="data-icon" data-percent={item.percent}>
-                                                                <i className={'icon-' + item.icon} />
+                                                                {item.icon ? <i className={'icon-' + item.icon} /> :
+                                                                    <img src={item.src} />
+                                                                }
                                                             </div>
                                                             <div className='desc'>
                                                                 <span>{item.name}</span>
