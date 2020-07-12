@@ -22,18 +22,21 @@ export default class Header extends Component {
                         <i className='icon-envelop' />
                         <a href='mailto:1360571582@qq.com'>1360571582@qq.com</a>
                     </div>
+                    
                     <div className='phone'>
-                        <i className='icon-chef' />
-                        <a href='http://iamroot.cn' target='_blank'>iamroot.cn</a>
+                        <i className='icon-github2'/>
+                        <a href='https://github.com/cungen' target='_blank'>https://github.com/cungen</a>
                     </div>
+                    {/* 
                     <div className={styles.aboutMe}>
-                        {/* <a href='http://weibo.com/2107571300' target='_blank' title='weibo'>
+                        <a href='http://weibo.com/2107571300' target='_blank' title='weibo'>
                             <i className='icon-sina-weibo'/>
-                        </a> */}
+                        </a>
                         <a href='https://github.com/cungen' target='_blank' title='github'>
                             <i className='icon-github2'/>
                         </a>
                     </div>
+                    */}
                 </div>
             </div>
         );
