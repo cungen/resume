@@ -8,7 +8,7 @@ export default class Header extends Component {
             <div className={styles.root}>
                 <div className={styles.left}>
                     <div className={styles.avatar}>
-                        <img src='./public/images/avatar.png' alt='avatar'/>
+                        <img src='./public/images/avatar.jpg' alt='avatar'/>
                     </div>
                     <div className={styles.name}>姜存根</div>
                     <div className={styles.position}>Frontend Engineer</div>
@@ -27,9 +27,9 @@ export default class Header extends Component {
                         <a href='http://iamroot.cn' target='_blank'>iamroot.cn</a>
                     </div>
                     <div className={styles.aboutMe}>
-                        <a href='http://weibo.com/2107571300' target='_blank' title='weibo'>
+                        {/* <a href='http://weibo.com/2107571300' target='_blank' title='weibo'>
                             <i className='icon-sina-weibo'/>
-                        </a>
+                        </a> */}
                         <a href='https://github.com/cungen' target='_blank' title='github'>
                             <i className='icon-github2'/>
                         </a>
