@@ -1,7 +1,5 @@
 import styles from './education.css';
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Colors from 'material-ui/lib/styles/colors';
 
 export default class Education extends Component {
     render() {

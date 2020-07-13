@@ -1,7 +1,5 @@
 import styles from './experiences.css';
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Colors from 'material-ui/lib/styles/colors';
 
 export default class Experiences extends Component {
     render() {
@@ -21,7 +19,55 @@ export default class Experiences extends Component {
                             <div className={styles.company}>医渡云技术有限公司</div>
                             <div className={styles.project}>专病数据库</div>
                             <div className={styles.content}>
-                                类似科研平台, 对某一病种的数据做更针对的结构化的产品, 由本人初始化框架, 采用Vue开发, 加入了Vux, 使用了ElementUI并定制化了样式
+                                产品迭代，移动端相关页面开发，及对患者时间轴可视化配置工具的开发
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{clear: 'both', overflow: 'hidden'}}>
+                    <div className='ctx-left'>
+                        <div className={styles.timeline} style={{height: 110}}>
+                            2019
+                        </div>
+                    </div>
+                    <div className='ctx-right'>
+                        <div className={styles.experiences}>
+                            <div className={styles.company}>医渡云技术有限公司</div>
+                            <div className={styles.project}>专病数据库、NCRC疾病数据中心</div>
+                            <div className={styles.content}>
+                                患者时间轴样式优化，主要是时间轴页面各组件及d3绘图方法的优化工作；专病库性能优化，主是要针对Vue的整体加载性能及大数据量表格渲染性能的优化工作；NCRC项目工程初始化及页面结构、导航等的搭建工作
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{clear: 'both', overflow: 'hidden'}}>
+                    <div className='ctx-left'>
+                        <div className={styles.timeline} style={{height: 110}}>
+                            2018
+                        </div>
+                    </div>
+                    <div className='ctx-right'>
+                        <div className={styles.experiences}>
+                            <div className={styles.company}>医渡云技术有限公司</div>
+                            <div className={styles.project}>专病数据库</div>
+                            <div className={styles.content}>
+                                患者搜索全家桶的复杂组件开发，整合了原来3种搜索方式，对搭建复杂业务组件有了相关的经验；Vue埋点库开发，可以记录用户的点击，页面跳转及页面停留时长的工具类库
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style={{clear: 'both', overflow: 'hidden'}}>
+                    <div className='ctx-left'>
+                        <div className={styles.timeline} style={{height: 110}}>
+                            2017
+                        </div>
+                    </div>
+                    <div className='ctx-right'>
+                        <div className={styles.experiences}>
+                            <div className={styles.company}>医渡云技术有限公司</div>
+                            <div className={styles.project}>专病数据库</div>
+                            <div className={styles.content}>
+                                类似科研平台, 对某一病种的数据做更针对的结构化的产品, 由本人初始化框架, 采用Vue及Vuex开发, 使用了ElementUI并定制化了样式及组件；患者时间轴页面的开发，采用d3开发，可以通过配置来展示用户关注的患者的相关医疗事件
                             </div>
                         </div>
                     </div>

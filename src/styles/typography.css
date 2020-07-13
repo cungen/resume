@@ -17,3 +17,8 @@
     line-height: 60px;
     background-color: white;
 }
+
+:global ul {
+    margin: 0;
+    padding: 0;
+}

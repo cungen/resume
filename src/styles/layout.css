@@ -4,12 +4,13 @@
     text-align: right;
     font-size: 14px;
     line-height: 22px;
+    color: #666a;
 }
+
 .ctx-right {
     width: 522px;
     float: right;
 }
-
 
 @media print {
     .page-next {
