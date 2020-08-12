@@ -17,9 +17,10 @@ export default class Experiences extends Component {
                     <div className='ctx-right'>
                         <div className={styles.experiences}>
                             <div className={styles.company}>医渡云技术有限公司</div>
-                            <div className={styles.project}>专病数据库</div>
+                            <div className={styles.project}>互联网医院、专病数据库</div>
                             <div className={styles.content}>
-                                产品迭代，移动端相关页面开发，及对患者时间轴可视化配置工具的开发
+                                互联网医院移动端公众号相关页面开发；
+                                时间轴可视化配置工具的开发，由本人单独完成页面展现及交互的设计与开发，迭代了数次，目前在组内使用，现可满足90%的配置需求；
                             </div>
                         </div>
                     </div>
@@ -33,9 +34,11 @@ export default class Experiences extends Component {
                     <div className='ctx-right'>
                         <div className={styles.experiences}>
                             <div className={styles.company}>医渡云技术有限公司</div>
-                            <div className={styles.project}>专病数据库、NCRC疾病数据中心</div>
+                            <div className={styles.project}>疾病数据中心、科研协作平台</div>
                             <div className={styles.content}>
-                                患者时间轴样式优化，主要是时间轴页面各组件及d3绘图方法的优化工作；专病库性能优化，主是要针对Vue的整体加载性能及大数据量表格渲染性能的优化工作；NCRC项目工程初始化及页面结构、导航等的搭建工作
+                                疾病数据中心项目工程初始化及页面结构、导航等的搭建工作（实现了3个子系统的相互跳转：多入口，共用组件库）；
+                                专病库性能优化，主是要针对Vue的整体加载性能及大数据量表格渲染性能的优化工作；
+                                患者时间轴样式优化，主要是时间轴页面各组件及d3绘图方法的优化工作；
                             </div>
                         </div>
                     </div>
@@ -51,7 +54,8 @@ export default class Experiences extends Component {
                             <div className={styles.company}>医渡云技术有限公司</div>
                             <div className={styles.project}>专病数据库</div>
                             <div className={styles.content}>
-                                患者搜索全家桶的复杂组件开发，整合了原来3种搜索方式，对搭建复杂业务组件有了相关的经验；Vue埋点库开发，可以记录用户的点击，页面跳转及页面停留时长的工具类库
+                                患者搜索全家桶的复杂组件开发，整合了原来3种搜索方式，对搭建复杂业务组件有了相关的经验；
+                                Vue埋点库开发，可以记录用户的点击，页面跳转及页面停留时长的工具类库
                             </div>
                         </div>
                     </div>
@@ -67,7 +71,8 @@ export default class Experiences extends Component {
                             <div className={styles.company}>医渡云技术有限公司</div>
                             <div className={styles.project}>专病数据库</div>
                             <div className={styles.content}>
-                                类似科研平台, 对某一病种的数据做更针对的结构化的产品, 由本人初始化框架, 采用Vue及Vuex开发, 使用了ElementUI并定制化了样式及组件；患者时间轴页面的开发，采用d3开发，可以通过配置来展示用户关注的患者的相关医疗事件
+                                针对某一病种的科研平台, 对该病种关心的数据做更针对的结构化的产品, 由本人初始化框架, 采用Vue及Vuex开发, 使用了ElementUI并定制化了样式及组件；
+                                患者时间轴页面的开发，采用d3开发，可以通过配置来展示用户关注的患者的相关医疗事件
                             </div>
                         </div>
                     </div>
@@ -99,7 +104,7 @@ export default class Experiences extends Component {
                         <div className={styles.experiences}>
                             <div className={styles.company}>医渡云技术有限公司</div>
                             <div className={styles.project}>医渡搜索</div>
-                            <div className={styles.content}>病历搜索和患者的facebook，早期采用node的express+angular，后因前后端分离，
+                            <div className={styles.content}>病历搜索和患者的医疗事件详情页，早期采用node的express+angular，后因前后端分离，
                                 前端页面重构只采用了angular后端由python开发, 其中样式框架的组织，专家搜索，
                                 用户反馈及搜索历史的记录与还原等均由本人开发完成；我们开发了自己的组件和样式库，项目中也同时用到了highchart,d3等数据可视化的内容</div>
                         </div>
