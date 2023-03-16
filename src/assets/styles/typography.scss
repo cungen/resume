@@ -1,0 +1,24 @@
+.title {
+    position: relative;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid lightseagreen;
+    color: #11b5ad;
+}
+
+.title span {
+    position: absolute;
+    top: 0;
+    left: 106px;
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 16px;
+    font-style: italic;
+    line-height: 60px;
+    background-color: white;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
