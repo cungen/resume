@@ -9,7 +9,7 @@
             >
                 <slot name="left"></slot>
             </div>
-            <div class="text-gray-800 leading-7">
+            <div class="text-gray-800 leading-7 info-wrapper-right">
                 <slot name="right"></slot>
             </div>
         </div>
@@ -23,3 +23,9 @@ export default {
     },
 }
 </script>
+
+<style lang="scss" scoped>
+.info-wrapper-right:deep(li + li) {
+    margin-top: 6px;
+}
+</style>
