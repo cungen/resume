@@ -9,6 +9,14 @@
         <the-experiences></the-experiences>
         <the-education></the-education>
         <the-certificate></the-certificate>
+        <footer class="mt-8 text-right">
+            <a
+                href="https://cungen.github.io/resume"
+                class="mx-auto text-gray-500 text-sm hover:text-cyan-500 hover:underline"
+                target="_blank"
+                >该简历网址</a
+            >
+        </footer>
     </div>
 </template>
 
