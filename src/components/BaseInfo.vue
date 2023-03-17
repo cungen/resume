@@ -23,8 +23,8 @@
                     </a>
                 </li>
                 <li class="hover:text-cyan-500">
-                    <a href="https://www.baidu.com" target="_blank">
-                        🌎 https://github.com/cungen
+                    <a href="https://www.iamroot.cn" target="_blank">
+                        🌎 https://www.iamroot.cn
                     </a>
                 </li>
             </ul>

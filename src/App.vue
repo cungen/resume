@@ -5,10 +5,10 @@
     >
         <base-info></base-info>
         <the-profile></the-profile>
-        <the-education></the-education>
-        <the-experiences></the-experiences>
-        <the-certificate></the-certificate>
         <the-skills></the-skills>
+        <the-experiences></the-experiences>
+        <the-education></the-education>
+        <the-certificate></the-certificate>
     </div>
 </template>
 
