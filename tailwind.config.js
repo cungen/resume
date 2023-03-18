@@ -4,7 +4,11 @@ module.exports = {
     content: [],
     darkMode: false, // or 'media' or 'class'
     theme: {
-        extend: {},
+        extend: {
+            screens: {
+                print: { raw: 'print' },
+            },
+        },
     },
     variants: {
         extend: {},
