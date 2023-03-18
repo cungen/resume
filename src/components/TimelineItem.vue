@@ -1,7 +1,7 @@
 <template>
     <section class="flex">
         <div
-            class="w-24 flex flex-none justify-end pr-3 text-gray-500 max-sm:w-12 max-sm:text-right"
+            class="w-12 flex flex-none justify-end pr-3 text-right text-gray-500 sm:w-24 print:w-24"
         >
             <slot name="left"></slot>
         </div>

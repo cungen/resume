@@ -1,6 +1,6 @@
 <template>
     <div
-        class="container max-w-screen-md mx-auto mb-7 p-8 border border-solid border-t-8 border-cyan-500 shadow-xl max-sm:p-4"
+        class="container max-w-3xl mx-auto mb-7 p-8 border border-solid border-t-8 border-cyan-500 shadow-xl max-sm:p-4 print:p-8 print:border-transparent print:shadow-transparent"
     >
         <base-info></base-info>
         <the-profile></the-profile>
