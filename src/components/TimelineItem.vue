@@ -1,6 +1,8 @@
 <template>
     <section class="flex">
-        <div class="w-24 flex flex-none justify-end pr-3 text-gray-500">
+        <div
+            class="w-24 flex flex-none justify-end pr-3 text-gray-500 max-sm:w-12 max-sm:text-right"
+        >
             <slot name="left"></slot>
         </div>
         <div class="flex flex-col">
