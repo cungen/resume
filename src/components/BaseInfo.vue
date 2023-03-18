@@ -1,5 +1,5 @@
 <template>
-    <div class="flex">
+    <div class="flex max-sm:flex-col">
         <div class="flex flex-1">
             <div class="w-24 h-24 rounded-full overflow-hidden">
                 <img src="images/avatar.jpg" alt="avatar" />
@@ -9,7 +9,7 @@
                 <div class="text-sm text-gray-500">Frontend Engineer</div>
             </div>
         </div>
-        <div class="flex flex-col w-60">
+        <div class="flex flex-col w-60 max-sm:mt-4 max-sm:ml-4">
             <ul class="text-gray-500">
                 <li class="hover:text-cyan-500">
                     <a href="tel:13240062495">📞 132-4006-2495</a>
