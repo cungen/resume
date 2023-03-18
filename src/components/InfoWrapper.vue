@@ -3,9 +3,9 @@
         <div class="title">
             <span>{{ title }}</span>
         </div>
-        <div class="flex max-sm:flex-col">
+        <div class="flex flex-col sm:flex-row print:flex-row">
             <div
-                class="w-28 flex flex-none justify-end pr-3 text-gray-500 leading-7 max-sm:w-auto max-sm:justify-start max-sm:text-xl max-sm:mb-3"
+                class="w-28 flex flex-none justify-start pr-3 text-xl text-gray-500 leading-7 mb-3 sm:w-28 sm:justify-end sm:text-base print:justify-end print:text-base"
             >
                 <slot name="left"></slot>
             </div>
