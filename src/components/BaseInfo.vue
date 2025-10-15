@@ -5,12 +5,12 @@
                 <img src="/images/avatar.jpg" alt="avatar" />
             </div>
             <div class="flex flex-col justify-center ml-6">
-                <div class="text-2xl font-semibold leading-9">姜存根</div>
+                <div class="text-2xl font-semibold leading-9 text-gradient">姜存根</div>
                 <div class="text-sm text-[var(--muted)]">Frontend Engineer</div>
                 <div class="mt-2 flex flex-wrap gap-1.5">
-                    <span class="px-2 py-0.5 rounded-md text-xs bg-[var(--card)] border border-[var(--border)]">10+ yrs</span>
-                    <span class="px-2 py-0.5 rounded-md text-xs bg-[var(--card)] border border-[var(--border)]">Vue • TypeScript</span>
-                    <span class="px-2 py-0.5 rounded-md text-xs bg-[var(--card)] border border-[var(--border)]">D3 • ECharts</span>
+                    <span class="chip">10+ yrs</span>
+                    <span class="chip">Vue • TypeScript</span>
+                    <span class="chip">D3 • ECharts</span>
                 </div>
             </div>
         </div>
