@@ -8,11 +8,11 @@
         <div class="relative flex flex-col items-center px-2">
             <div
                 class="flex-none w-2.5 h-2.5 mt-1.5 rounded-md"
-                :style="{ background: `linear-gradient(90deg, var(--grad-from), var(--grad-to))` }"
+                :style="{
+                    background: `linear-gradient(90deg, var(--grad-from), var(--grad-to))`,
+                }"
             ></div>
-            <div
-                class="w-px h-full mt-1 bg-[var(--border)]"
-            ></div>
+            <div class="w-px h-full mt-1 bg-[var(--border)]"></div>
         </div>
         <div class="pb-4 text-[var(--text)] leading-5">
             <div class="flex items-baseline">
