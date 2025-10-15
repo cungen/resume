@@ -2,7 +2,7 @@
     <div class="flex flex-col sm:flex-row print:flex-row">
         <div class="flex flex-1 items-center">
             <div class="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-[var(--accent)] ring-opacity-20">
-                <img src="images/avatar.jpg" alt="avatar" />
+                <img src="/images/avatar.jpg" alt="avatar" />
             </div>
             <div class="flex flex-col justify-center ml-6">
                 <div class="text-2xl font-semibold leading-9 text-gradient">姜存根</div>
