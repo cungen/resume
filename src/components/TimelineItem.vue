@@ -1,22 +1,22 @@
 <template>
     <section class="flex">
         <div
-            class="w-12 flex flex-none justify-end pr-3 text-right text-gray-500 sm:w-24 print:w-24"
+            class="w-12 flex flex-none justify-end pr-3 text-right text-[var(--muted)] sm:w-24 print:w-24"
         >
             <slot name="left"></slot>
         </div>
-        <div class="flex flex-col">
+        <div class="relative flex flex-col items-center px-2">
             <div
-                class="flex-none w-2 h-2 mt-1.5 mr-3 mr rounded bg-cyan-500"
+                class="flex-none w-2.5 h-2.5 mt-1.5 rounded-md bg-[var(--accent)] ring-4 ring-[color-mix(in_srgb,var(--accent)_18%,transparent)]"
             ></div>
             <div
-                class="w-0 h-full mt-1 ml-0.5 border-l-4 border-dashed border-l-gray-400 scale-x-50"
+                class="w-px h-full mt-1 bg-[var(--border)]"
             ></div>
         </div>
-        <div class="pb-4 text-gray-800 leading-5">
-            <div class="flex align-middle">
+        <div class="pb-4 text-[var(--text)] leading-5">
+            <div class="flex items-baseline">
                 <slot name="right-company"></slot>
-                <div class="text-gray-500 text-sm ml-4">
+                <div class="text-[var(--muted)] text-sm ml-4">
                     <slot name="right-product"></slot>
                 </div>
             </div>
