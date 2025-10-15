@@ -9,11 +9,11 @@
             <template #right-product>{{ e.product }}</template>
             <template #right-description>
                 <div>{{ e.description }}</div>
-                <div class="flex mt-1" v-if="e.points">
+                <div class="flex mt-1 flex-wrap gap-1.5" v-if="e.points">
                     <span
                         v-for="(p, pIndex) in e.points"
                         :key="pIndex"
-                        class="inline-flex mr-1.5 px-2 py-0.5 bg-gray-200 rounded text-xs"
+                        class="inline-flex px-2 py-0.5 bg-gray-200 rounded text-xs"
                         >{{ p }}</span
                     >
                 </div>
@@ -29,7 +29,23 @@ export default {
         return {
             experiences: [
                 {
-                    date: '至今',
+                    date: 'Now',
+                    company: '医二科技',
+                    product: '新版模型评测平台, 患者招募小程序',
+                    description:
+                        '90%代码由本人开发；支持Base与Chat模型评测；支持多类型数据集；支持主观与客观评测；支持多模态模型；支持集群部署评测自动发现可用资源；支持多种评测后端（OpenCompass、Evalscope）',
+                    points: ['Python', 'Ray', 'Vue'],
+                },
+                {
+                    date: '2024-09',
+                    company: '医二科技',
+                    product: '旧版模型评测平台, 模型训推一体机平台开发, 健康管理小程序',
+                    description:
+                        '90%代码由本人开发；支持Base与Chat模型评测；支持多类型数据集；支持主观与客观评测；支持多模态模型；支持集群部署评测自动发现可用资源；支持多种评测后端（OpenCompass、Evalscope）',
+                    points: ['Python', 'Ray', 'Vue'],
+                },
+                {
+                    date: '2023-09',
                     company: '医渡云技术有限公司',
                     product: '全病种、患者管理平台、专病数据库、AI建模平台',
                     description:
