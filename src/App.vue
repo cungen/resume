@@ -30,12 +30,8 @@
                     <the-profile></the-profile>
                     <the-skills></the-skills>
                     <the-experiences></the-experiences>
-                    <the-projects></the-projects>
                     <the-education></the-education>
                     <the-certificate></the-certificate>
-                    <the-open-source></the-open-source>
-                    <the-achievements></the-achievements>
-                    <the-languages></the-languages>
                     <footer class="mt-8 text-right">
                         <a
                             href="https://cungen.github.io/resume"
@@ -58,10 +54,7 @@ import TheEducation from './components/TheEducation.vue'
 import TheExperiences from './components/TheExperiences.vue'
 import TheCertificate from './components/TheCertificate.vue'
 import TheSkills from './components/TheSkills.vue'
-import TheProjects from './components/TheProjects.vue'
-import TheOpenSource from './components/TheOpenSource.vue'
-import TheAchievements from './components/TheAchievements.vue'
-import TheLanguages from './components/TheLanguages.vue'
+// removed extra sections
 
 export default defineComponent({
     name: 'App',
@@ -72,10 +65,6 @@ export default defineComponent({
         TheExperiences,
         TheCertificate,
         TheSkills,
-        TheProjects,
-        TheOpenSource,
-        TheAchievements,
-        TheLanguages,
     },
     setup() {
         const isDark = ref(false)
