@@ -1,21 +1,27 @@
+/* Slim accent underline for section titles */
 .title {
     position: relative;
-    padding-top: 30px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid lightseagreen;
-    color: #11b5ad;
+    margin: 24px 0 20px;
+    color: var(--text);
 }
 
 .title span {
-    position: absolute;
-    top: 0;
-    left: 106px;
+    position: relative;
     display: inline-block;
-    padding-left: 12px;
-    padding-right: 16px;
-    font-style: italic;
-    line-height: 60px;
-    background-color: white;
+    padding-bottom: 6px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.title span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--grad-from), var(--grad-to));
+    border-radius: 9999px;
 }
 
 ul {

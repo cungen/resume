@@ -1,30 +1,43 @@
 <template>
     <div class="flex flex-col sm:flex-row print:flex-row">
-        <div class="flex flex-1">
-            <div class="w-24 h-24 rounded-full overflow-hidden">
-                <img src="images/avatar.jpg" alt="avatar" />
+        <div class="flex flex-1 items-center">
+            <div class="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-[var(--accent)] ring-opacity-20">
+                <img src="/images/avatar.jpg" alt="avatar" />
             </div>
             <div class="flex flex-col justify-center ml-6">
-                <div class="text-xl leading-9">姜存根</div>
-                <div class="text-sm text-gray-500">Frontend Engineer</div>
+                <div class="text-2xl font-semibold leading-9 text-gradient">姜存根</div>
+                <div class="text-sm text-[var(--muted)]">Frontend Engineer</div>
+                <div class="mt-2 flex flex-wrap gap-1.5">
+                    <span class="chip">10+ yrs</span>
+                    <span class="chip">Vue • TypeScript</span>
+                    <span class="chip">D3 • ECharts</span>
+                </div>
             </div>
         </div>
-        <div class="flex flex-col w-60 mt-4 ml-4 sm:mt-0 print:mt-0">
-            <ul class="text-gray-500">
-                <li class="hover:text-cyan-500">
+        <div class="flex flex-col w-full sm:w-64 mt-4 sm:mt-0 sm:ml-4 print:mt-0">
+            <ul class="text-[var(--muted)] space-y-1.5">
+                <li>
+                    <span class="mr-2">📍</span> Beijing, China
+                </li>
+                <li class="hover:text-[var(--accent)]">
                     <a href="tel:13240062495">📞 132-4006-2495</a>
                 </li>
-                <li class="hover:text-cyan-500">
+                <li class="hover:text-[var(--accent)]">
                     <a href="mailto:1360571582@qq.com">📧 1360571582@qq.com</a>
                 </li>
-                <li class="hover:text-cyan-500">
+                <li class="hover:text-[var(--accent)]">
                     <a href="https://github.com/cungen" target="_blank">
-                        👨‍💻 https://github.com/cungen
+                        👨‍💻 github.com/cungen
                     </a>
                 </li>
-                <li class="hover:text-cyan-500">
+                <li class="hover:text-[var(--accent)]">
+                    <a href="https://www.linkedin.com/in/mock-linkedin" target="_blank">
+                        🔗 linkedin.com/in/mock-linkedin
+                    </a>
+                </li>
+                <li class="hover:text-[var(--accent)]">
                     <a href="https://www.iamroot.cn" target="_blank">
-                        🌎 https://www.iamroot.cn
+                        🌎 iamroot.cn
                     </a>
                 </li>
             </ul>
