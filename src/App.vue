@@ -1,6 +1,6 @@
 <template>
-    <div class="min-h-screen bg-[var(--bg)]">
-        <div class="max-w-3xl mx-auto px-4 py-6">
+    <div class="min-h-screen bg-[var(--bg)] mesh-bg">
+        <div class="max-w-3xl mx-auto px-4 py-10">
             <div class="flex items-center justify-between mb-6">
                 <h1 class="text-xl font-semibold text-gray-500">
                     Resume
@@ -23,9 +23,9 @@
                 </div>
             </div>
             <div
-                class="card border-t-8 border-t-[var(--accent)] shadow-xl print:border-transparent print:shadow-transparent"
+                class="card glass border-t-8 border-t-[var(--accent)] shadow-xl print:border-transparent print:shadow-transparent"
             >
-                <div class="p-6 max-sm:p-4 print:p-8">
+                <div class="p-7 max-sm:p-4 print:p-8">
                     <base-info></base-info>
                     <the-profile></the-profile>
                     <the-skills></the-skills>

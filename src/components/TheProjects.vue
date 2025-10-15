@@ -3,16 +3,16 @@
         <template #left>项目</template>
         <template #right>
             <div class="grid gap-3">
-                <div v-for="(p, i) in projects" :key="i" class="p-3 rounded-lg border border-[var(--border)] bg-[var(--card)]">
+                <div v-for="(p, i) in projects" :key="i" class="p-3 rounded-xl border border-[var(--border)] bg-[var(--card)] hover:shadow-lg transition">
                     <div class="flex items-center justify-between">
-                        <div class="font-medium">
+                        <div class="font-medium hover:text-[var(--accent)] transition">
                             <a :href="p.link" target="_blank" class="hover:underline">{{ p.name }}</a>
                         </div>
                         <div class="text-xs text-[var(--muted)]">{{ p.period }}</div>
                     </div>
                     <div class="text-sm mt-1 text-[var(--muted)]">{{ p.summary }}</div>
                     <div class="mt-2 flex flex-wrap gap-1.5">
-                        <span v-for="(t, ti) in p.stack" :key="ti" class="px-2 py-0.5 rounded-md text-xs bg-[var(--card)] border border-[var(--border)]">{{ t }}</span>
+                        <span v-for="(t, ti) in p.stack" :key="ti" class="chip">{{ t }}</span>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,8 @@
         </div>
         <div class="relative flex flex-col items-center px-2">
             <div
-                class="flex-none w-2.5 h-2.5 mt-1.5 rounded-md bg-[var(--accent)] ring-4 ring-[color-mix(in_srgb,var(--accent)_18%,transparent)]"
+                class="flex-none w-2.5 h-2.5 mt-1.5 rounded-md"
+                :style="{ background: `linear-gradient(90deg, var(--grad-from), var(--grad-to))` }"
             ></div>
             <div
                 class="w-px h-full mt-1 bg-[var(--border)]"
