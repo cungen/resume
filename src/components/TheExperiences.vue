@@ -29,6 +29,14 @@ export default {
         return {
             experiences: [
                 {
+                    date: '2024-09 ~ 2025-09',
+                    company: '—',
+                    product: '模型评测平台',
+                    description:
+                        '90%代码由本人开发；支持Base与Chat模型评测；支持多类型数据集；支持主观与客观评测；支持多模态模型；支持集群部署评测自动发现可用资源；支持多种评测后端（OpenCompass、Evalscope）；技术栈：Python、Ray、Vue',
+                    points: ['评测平台', '多模态', '集群资源发现', 'OpenCompass', 'Evalscope', 'Python', 'Ray', 'Vue'],
+                },
+                {
                     date: '至今',
                     company: '医渡云技术有限公司',
                     product: '全病种、患者管理平台、专病数据库、AI建模平台',

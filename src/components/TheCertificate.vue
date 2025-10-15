@@ -5,6 +5,7 @@
             <ul>
                 <li>1. CET-4</li>
                 <li>2. Coursera-Stanford online Machine Learning</li>
+                <li>3. PCB设计职业技术证书</li>
             </ul>
         </template>
     </info-wrapper>
