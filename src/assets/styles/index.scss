@@ -4,3 +4,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Modern base tokens */
+:root {
+  --accent: #06b6d4; /* cyan-500 */
+  --accent-600: #0891b2; /* cyan-600 */
+  --text: #111827; /* gray-900 */
+  --muted: #6b7280; /* gray-500 */
+  --bg: #ffffff;
+  --card: #ffffff;
+  --border: #e5e7eb; /* gray-200 */
+}
+
+.dark {
+  --accent: #22d3ee; /* cyan-400 */
+  --accent-600: #06b6d4; /* cyan-500 */
+  --text: #e5e7eb; /* gray-200 */
+  --muted: #9ca3af; /* gray-400 */
+  --bg: #0b1220;
+  --card: #0f172a; /* slate-900 */
+  --border: #1f2937; /* gray-800 */
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-[var(--bg)] text-[var(--text)] font-sans;
+  }
+  a {
+    @apply text-[var(--accent)] hover:text-[var(--accent-600)] transition-colors;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-[var(--card)] border border-[var(--border)] rounded-xl shadow-sm;
+  }
+}
