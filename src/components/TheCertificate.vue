@@ -1,5 +1,5 @@
 <template>
-    <info-wrapper title="Certificate">
+    <info-wrapper title="Certificates">
         <template #left>证书</template>
         <template #right>
             <ul>
@@ -11,12 +11,6 @@
     </info-wrapper>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import InfoWrapper from './InfoWrapper.vue'
-
-export default {
-    components: {
-        InfoWrapper,
-    },
-}
 </script>

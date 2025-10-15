@@ -16,12 +16,12 @@
     </div>
 </template>
 
-<script lang="ts">
-export default {
-    props: {
-        title: String,
-    },
+<script setup lang="ts">
+interface Props {
+    title?: string
 }
+
+defineProps<Props>()
 </script>
 
 <style lang="scss" scoped>

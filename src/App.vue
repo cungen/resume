@@ -1,11 +1,9 @@
 <template>
-    <div class="min-h-screen bg-[var(--bg)] mesh-bg">
+    <div class="min-h-screen bg-[var(--bg)] mesh-bg font-sans">
         <div class="max-w-3xl mx-auto px-4 py-10">
-            <div class="flex items-center justify-between mb-6">
-                <h1 class="text-xl font-semibold text-gray-500">
-                    Resume
-                </h1>
-                <div class="flex items-center gap-2">
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-xl font-semibold text-gray-500">Resume</h1>
+                <div class="flex items-center gap-2 print:hidden">
                     <button
                         class="px-3 py-1.5 rounded-md border border-[var(--border)] text-sm hover:bg-[var(--card)]"
                         @click="toggleDark"
@@ -30,8 +28,8 @@
                     <the-profile></the-profile>
                     <the-skills></the-skills>
                     <the-experiences></the-experiences>
-                    <the-education></the-education>
                     <the-certificate></the-certificate>
+                    <the-education></the-education>
                     <footer class="mt-8 text-right">
                         <a
                             href="https://cungen.github.io/resume"
@@ -46,8 +44,8 @@
     </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, onMounted } from 'vue'
+<script lang="ts" setup>
+import { ref, onMounted } from 'vue'
 import BaseInfo from './components/BaseInfo.vue'
 import TheProfile from './components/TheProfile.vue'
 import TheEducation from './components/TheEducation.vue'
@@ -56,36 +54,22 @@ import TheCertificate from './components/TheCertificate.vue'
 import TheSkills from './components/TheSkills.vue'
 // removed extra sections
 
-export default defineComponent({
-    name: 'App',
-    components: {
-        BaseInfo,
-        TheProfile,
-        TheEducation,
-        TheExperiences,
-        TheCertificate,
-        TheSkills,
-    },
-    setup() {
-        const isDark = ref(false)
-        const applyDarkClass = (value: boolean) => {
-            const root = document.documentElement
-            if (value) root.classList.add('dark')
-            else root.classList.remove('dark')
-        }
-        const toggleDark = () => {
-            isDark.value = !isDark.value
-            localStorage.setItem('resume:dark', String(isDark.value))
-            applyDarkClass(isDark.value)
-        }
-        const printPage = () => window.print()
-        onMounted(() => {
-            const saved = localStorage.getItem('resume:dark')
-            isDark.value = saved === 'true'
-            applyDarkClass(isDark.value)
-        })
-        return { isDark, toggleDark, printPage }
-    },
+const isDark = ref(false)
+const applyDarkClass = (value: boolean) => {
+    const root = document.documentElement
+    if (value) root.classList.add('dark')
+    else root.classList.remove('dark')
+}
+const toggleDark = () => {
+    isDark.value = !isDark.value
+    localStorage.setItem('resume:dark', String(isDark.value))
+    applyDarkClass(isDark.value)
+}
+const printPage = () => window.print()
+onMounted(() => {
+    const saved = localStorage.getItem('resume:dark')
+    isDark.value = saved === 'true'
+    applyDarkClass(isDark.value)
 })
 </script>
 

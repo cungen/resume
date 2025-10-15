@@ -8,12 +8,6 @@
     </info-wrapper>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import InfoWrapper from './InfoWrapper.vue'
-
-export default {
-    components: {
-        InfoWrapper,
-    },
-}
 </script>
