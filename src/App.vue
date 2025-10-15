@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div
-                class="card glass border-t-8 border-t-[var(--accent)] shadow-xl print:border-transparent print:shadow-transparent"
+                class="card glass shadow-xl print:border-transparent print:shadow-transparent"
             >
                 <div class="p-7 max-sm:p-4 print:p-8">
                     <base-info></base-info>
