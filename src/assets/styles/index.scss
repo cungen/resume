@@ -76,3 +76,28 @@
       linear-gradient(180deg, color-mix(in srgb, var(--bg) 100%, transparent), color-mix(in srgb, var(--bg) 100%, transparent));
   }
 }
+
+.marked-content {
+  p {
+    @apply mb-2;
+  }
+  ul {
+    @apply list-disc list-outside leading-relaxed pl-4;
+  }
+  ol {
+    @apply list-decimal list-outside leading-relaxed pl-4;
+  }
+  li + li {
+    @apply mt-1;
+  }
+  ul ul,
+  ol ol {
+    @apply list-disc list-outside pl-4;
+  }
+  a {
+    @apply text-[var(--accent)] hover:text-[var(--accent-600)] transition-colors underline font-medium;
+  }
+  b, strong {
+    @apply font-medium text-[var(--accent)];
+  }
+}

@@ -17,11 +17,11 @@
         <div class="pb-4 text-[var(--text)] leading-5">
             <div class="flex items-baseline">
                 <slot name="right-company"></slot>
-                <div class="text-[var(--muted)] text-sm ml-4">
+                <div class="text-sm ml-4">
                     <slot name="right-product"></slot>
                 </div>
             </div>
-            <div class="text-sm mt-3 leading-6">
+            <div class="text-sm mt-3 leading-6 text-[var(--muted)]">
                 <slot name="right-description"></slot>
             </div>
         </div>
