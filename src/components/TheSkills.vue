@@ -77,7 +77,7 @@ const initRadarChart = () => {
                 type: 'radar',
                 data: [
                     {
-                        value: [90, 80, 85, 50, 58, 65],
+                        value: [90, 80, 80, 55, 60, 65],
                     },
                 ],
             },

@@ -2,7 +2,7 @@
     <info-wrapper title="Profile">
         <template #left>简介</template>
         <template #right>
-            14年本科毕业，10年+前端开发经验，~3年管理经验，~2年全栈开发经验，近期主要使用Vue,Python相关的技术栈开发，
+            14年本科毕业，10年+前端开发经验，3年+管理经验，2年+全栈开发经验，近期主要使用Vue,Python相关的技术栈开发，
             个人兴趣比较广泛，对
             <b class="text-[var(--accent)]">机器学习</b>、<b
                 class="text-[var(--accent)]"
