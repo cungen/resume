@@ -19,7 +19,7 @@
                 <div class="marked-content">
                     <div v-html="parser.parse(e.description.trim())"></div>
                 </div>
-                <div class="flex mt-1 flex-wrap gap-1.5" v-if="e.points">
+                <div class="flex mt-1 flex-wrap gap-1.5 pl-4" v-if="e.points">
                     <span
                         v-for="(p, pIndex) in e.points"
                         :key="pIndex"

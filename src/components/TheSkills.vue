@@ -25,7 +25,8 @@ import InfoWrapper from './InfoWrapper.vue'
 const radarChart = ref<HTMLElement>()
 const marked = new Marked()
 
-const keywords = ['性能优化', 'D3', 'ThreeJS', 'Ray', 'Docker']
+// const keywords = ['性能优化', 'D3', 'ThreeJS', 'Ray', 'PCB职业证书']
+const keywords: string[] = []
 
 const highlightKeywords = (text: string) => {
     let highlightedText = text
@@ -42,7 +43,7 @@ const highlightKeywords = (text: string) => {
 const skillMarkdown = marked.parse(
     highlightKeywords(
         `
-- **前端经验丰富**，有工程化、性能优化经验，有跨端开发经验(Web、小程序)，可视化经验丰富(D3, ECharts, ThreeJS)
+- **前端经验丰富**，有工程化、性能优化经验，有跨端开发经验(Web、小程序, HybridApp)，可视化经验丰富(D3, ECharts, ThreeJS)
 - **知识面较广**，除前端知识外
   - **后端**: Python有2年+开发经验，使用过分布式框架 Ray
   - **运维**：搭建过私有Nas及自建[🔗VPN进行内网穿透](https://iamroot.cn/tailscalezu-wang-shen-qi/)，Docker使用熟练，有华为昇腾服务器(910B3)上模型推理环境搭建经验，Ansible使用熟练
