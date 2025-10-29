@@ -12,7 +12,9 @@
                 <div class="text-2xl font-semibold leading-9 text-gradient">
                     姜存根
                 </div>
-                <div class="text-sm text-[var(--muted)]">Frontend Engineer</div>
+                <div class="text-sm text-[var(--muted)]">
+                    Frontend/FullStack Engineer
+                </div>
                 <div class="mt-2 flex flex-wrap gap-1.5">
                     <span class="chip">10+ yrs</span>
                     <span class="chip">Vue • React • TS</span>

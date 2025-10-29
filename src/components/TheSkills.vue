@@ -50,7 +50,7 @@ const skillMarkdown = marked.parse(
   - **硬件**：有PCB职业证书，了解嵌入式开发
   - **建模**：会使用Blender, Fusion360, SolidWorks等3维建模软件，有3D打印经验
 - **阅读过较多开源代码**：Vue, LangChain, Cline, [🔗OpenManus](https://cungen.github.io/notes/Cards/LangManus%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90), [🔗LangManus源码分析](https://cungen.github.io/notes/Cards/LangManus%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90) [🔗DeerFlow源码分析](https://cungen.github.io/notes/Cards/DeerFlow%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90), FastGPT, OpenCompass, CherryStudio等
-- 其他：有过~3年带团队经验；软件专业，基础扎实；Cli工具(Tmux, Vim, Ansible) 使用熟练，效率贼高。
+- 其他：有过3年+带团队经验；软件专业，基础扎实；Cli工具(Tmux, Vim, Ansible, Docker等)使用熟练，效率很高，两三层楼那么高。
 `.trim(),
     ),
 )

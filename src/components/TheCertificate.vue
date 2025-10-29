@@ -3,9 +3,18 @@
         <template #left>证书</template>
         <template #right>
             <ul>
-                <li>1. PCB设计职业技术证书</li>
-                <li>2. Coursera-Stanford online Machine Learning</li>
-                <li>3. CET-4</li>
+                <li>
+                    1. PCB设计职业技术证书 -
+                    <span class="text-[var(--accent)]">2025</span>
+                </li>
+                <li>
+                    2. Coursera-Stanford online Machine Learning -
+                    <span class="text-[var(--accent)]">2020</span>
+                </li>
+                <li>
+                    3. CET-4 -
+                    <span class="text-[var(--accent)]">2012</span>
+                </li>
             </ul>
         </template>
     </info-wrapper>
