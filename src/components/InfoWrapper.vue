@@ -9,7 +9,7 @@
             >
                 <slot name="left"></slot>
             </div>
-            <div class="text-gray-800 leading-7 info-wrapper-right">
+            <div class="text-[var(--text)] leading-7 info-wrapper-right">
                 <slot name="right"></slot>
             </div>
         </div>

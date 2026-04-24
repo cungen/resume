@@ -2,7 +2,10 @@
     <div>
         <div class="title flex items-center gap-4">
             <span>Experiences</span>
-            <select v-model="showYears" class="text-sm">
+            <select
+                v-model="showYears"
+                class="text-sm rounded-md border border-[var(--border)] bg-[var(--card)] text-[var(--text)] px-2 py-1 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/40"
+            >
                 <option value="5">近5年</option>
                 <option value="10">近10年</option>
                 <option value="100">全部</option>
@@ -23,9 +26,10 @@
                     <span
                         v-for="(p, pIndex) in e.points"
                         :key="pIndex"
-                        class="inline-flex px-2 py-0.5 bg-gray-200 rounded text-xs"
-                        >{{ p }}</span
+                        class="chip"
                     >
+                        {{ p }}
+                    </span>
                 </div>
             </template>
         </timeline-item>
@@ -41,13 +45,22 @@ const parser = new Marked()
 const showYears = ref('5')
 const experiences = [
     {
+        date: '2025-11',
+        company: '医渡云技术有限公司',
+        product: '',
+        description: `
+- **医渡智循小程序及 App**：可验证、可追溯的循证医学 AI 平台。作为前端，使用 UniApp 及 Flutter 开发，其中模型对话，思考过程，流式输出内容，引用及文献展示等由本人开发，有各大平台上线经验，**大模型生成>90%代码**；
+`,
+        points: ['Flutter', 'UniApp', 'Vue3'],
+    },
+    {
         date: '2025-09',
         company: '医二科技',
         product: '',
         description: `
 - **新版模型评测平台**：前后端均由本人开发；支持Base与Chat模型评测；支持200多种数据集；支持主观与客观评测；支持多模态模型评测；支持集群部署评测自动发现可用资源；支持多种评测后端（OpenCompass、EvalScope）；支持结果对比统计与日志查看；前端使用Vue3，后端使用Python开发，使用Ray分布式框架进行模型推理与评测任务管理，对于Chat模型可使用VLLM或SGLang来推理；
 - **患者招募小程序**：作为前端，使用Vue开发；支持患者通过上传资料来匹配临床试验，同时支持患者与模型对话询问试验或匹配信息
-- **知识管理平台**：全栈，部分参与；前端使用Vue，后端使用Python开发，基于[🔗DDD领域设计及应用架构](https://cungen.github.io/notes/Cards/DDD%E9%A2%86%E5%9F%9F%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84)；**大模型生成~80%代码**
+- **知识管理平台**：全栈，部分参与；前端使用Vue，后端使用Python开发，基于[🔗DDD领域设计及应用架构](https://cungen.github.io/notes/cards/ddd%E9%A2%86%E5%9F%9F%E8%AE%BE%E8%AE%A1%E5%8F%8A%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84)；**大模型生成~80%代码**
 `,
         points: ['Python', 'Ray', 'Vue3'],
     },
