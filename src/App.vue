@@ -1,6 +1,6 @@
 <template>
     <div class="min-h-screen bg-[var(--bg)] mesh-bg font-sans">
-        <div class="max-w-3xl mx-auto px-4 py-10">
+        <div class="max-w-3xl mx-auto px-4 py-10 print:py-0 print:px-2">
             <div class="relative">
                 <div
                     class="absolute print:hidden z-10 flex flex-col gap-2 top-4 -right-14 max-lg:right-2 max-lg:top-2"
